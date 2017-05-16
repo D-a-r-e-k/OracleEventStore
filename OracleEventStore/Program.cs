@@ -86,7 +86,7 @@ namespace OracleEventStore
 
                 sqlConnection.Open();
 
-                for (int i = 0; i < 10; ++i)
+                for (int i = 0; i < 1000; ++i)
                 {
                     int expectedVersion = 1; //i * 10 + 1;
                     Guid aggregateId = Guid.NewGuid(); //new Guid("0eaf40de-6481-4895-a654-e6bea1c6a594");
